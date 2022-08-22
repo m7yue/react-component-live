@@ -1,0 +1,29 @@
+{
+  "name": "react-component-live",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "react jsx react ",
+  "author": "m7yue",
+  "homepage": "/react-component-live/dist",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.33.0",
+    "monaco-themes": "^0.4.2",
+    "prism-react-renderer": "^1.3.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-live": "3.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  }
+}
