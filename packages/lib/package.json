@@ -1,12 +1,23 @@
 {
   "name": "react-component-live",
   "private": true,
-  "version": "0.0.0",
-  "description": "react jsx react react-component-live",
-  "author": "m7yue",
-  "homepage": "/react-component-live/page",
+  "version": "1.0.0",
+  "description": "a component library for live editor and preview with react-jsx syntax.",
+  "keywords": ["react", "react-component-live", "react live editor", "jsx react monaco"],
+  "author": "m7yue <wl7yue@163.com>",
+  "homepage": "https://m7yue.github.io/react-component-live/",
+  "bugs": {
+    "url": "https://github.com/m7yue/react-component-live/issues",
+    "email": "wl7yue@163.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc"
