@@ -3,7 +3,6 @@ import vitePluginreact from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: command === 'build' ?  'dist' : '',
   base: './',
   
   server: {
@@ -17,6 +16,13 @@ export default defineConfig({
   build: {
     commonjsOptions: {
       include: [/react\/jsx-runtime/, /node_modules/]
+    },
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name].[hash].js`,
+        chunkFileNames: `assets/[name].[hash].js`,
+        assetFileNames: `assets/[name].[hash].[ext]`,
+      }
     }
-  }
+  },
 })
