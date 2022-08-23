@@ -93,6 +93,3 @@ export type PreviewProps = {
   scope?: LiveProviderProps['scope'];
 }
 ```
-
-
-

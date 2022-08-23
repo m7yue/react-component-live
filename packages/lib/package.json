@@ -1,15 +1,20 @@
 {
   "name": "react-component-live",
-  "private": true,
-  "version": "1.0.0",
+  "private": false,
+  "version": "1.0.3",
   "description": "a component library for live editor and preview with react-jsx syntax.",
-  "keywords": ["react", "react-component-live", "react live editor", "jsx react monaco"],
+  "keywords": [
+    "react",
+    "react-component-live",
+    "react live editor",
+    "jsx react monaco"
+  ],
   "author": "m7yue <wl7yue@163.com>",
   "homepage": "https://m7yue.github.io/react-component-live/",
   "repository": {
     "type": "git",
     "url": "https://github.com/m7yue/react-component-live"
-  },  
+  },
   "bugs": {
     "url": "https://github.com/m7yue/react-component-live/issues",
     "email": "wl7yue@163.com"
