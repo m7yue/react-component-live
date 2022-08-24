@@ -29,5 +29,14 @@ export var ReactComponentLive = function (props) {
             setCode(monacoEditor.current.editor.getValue());
         }
     }, [monacoEditor]);
-    return (_jsx(_Fragment, { children: _jsxs(ContextProvider, __assign({ scope: scope }, { children: [_jsx(MonacoEditor, { defaultValue: defaultValue, ref: monacoEditor }), _jsx(Preview, { code: code })] })) }));
+    return (_jsx(_Fragment, { children: _jsx(ContextProvider, __assign({ scope: scope }, { children: _jsxs("div", __assign({ style: {
+                    display: "flex"
+                } }, { children: [_jsx(MonacoEditor, { defaultValue: defaultValue, ref: monacoEditor }), _jsx("div", __assign({ style: {
+                            width: 600,
+                            height: 600,
+                            overflow: "auto",
+                            padding: 10,
+                            boxSizing: "border-box",
+                            background: "lightskyblue"
+                        } }, { children: _jsx(Preview, { code: code }) }))] })) })) }));
 };

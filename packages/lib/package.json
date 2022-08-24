@@ -1,7 +1,7 @@
 {
   "name": "react-component-live",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a component library for live editor and preview with react-jsx syntax.",
   "keywords": [
     "react",

@@ -28,12 +28,25 @@ export const ReactComponentLive: FC<LiveProps> = (props) => {
   return (
     <>
       <ContextProvider scope={scope}>
-        <MonacoEditor
-          defaultValue={defaultValue}
-          ref={monacoEditor}
-        />
+        <div style={{
+          display: "flex"
+        }}>
+          <MonacoEditor
+            defaultValue={defaultValue}
+            ref={monacoEditor}
+          />
 
-        <Preview code={code}/>
+          <div style={{
+            width: 600,
+            height: 600,
+            overflow: "auto",
+            padding: 10,
+            boxSizing: "border-box",
+            background: "lightskyblue"
+          }}>
+            <Preview code={code}/>
+          </div>
+        </div>
       </ContextProvider>
     </>
   );
