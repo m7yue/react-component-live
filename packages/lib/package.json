@@ -1,7 +1,7 @@
 {
   "name": "react-component-live",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a component library for live editor and preview with react-jsx syntax.",
   "keywords": [
     "react",
@@ -23,13 +23,12 @@
     "dist"
   ],
   "license": "MIT",
-  "type": "module",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc"
+    "build": "tsup"
   },
   "publishConfig": {
     "directory": "dist"
@@ -48,6 +47,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "tsup": "^6.2.2",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
   }

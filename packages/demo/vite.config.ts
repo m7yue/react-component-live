@@ -10,13 +10,7 @@ export default defineConfig({
     port: 7777
   },
   plugins: [vitePluginreact()],
-  optimizeDeps: {
-    include: ['react/jsx-runtime']
-  },
   build: {
-    commonjsOptions: {
-      include: [/react\/jsx-runtime/, /node_modules/]
-    },
     rollupOptions: {
       output: {
         entryFileNames: `assets/[name].[hash].js`,
