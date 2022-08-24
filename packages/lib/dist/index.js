@@ -1,204 +1,27 @@
-"use strict";
-var __create = Object.create;
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const k=require("react"),br=require("monaco-editor"),re=require("react-live"),hr=i=>i&&typeof i=="object"&&"default"in i?i:{default:i};function kr(i){if(i&&i.__esModule)return i;const f=Object.create(null,{[Symbol.toStringTag]:{value:"Module"}});if(i){for(const v in i)if(v!=="default"){const p=Object.getOwnPropertyDescriptor(i,v);Object.defineProperty(f,v,p.get?p:{enumerable:!0,get:()=>i[v]})}}return f.default=i,Object.freeze(f)}const ne=hr(k),B=kr(br),yr="vs-dark",_r=!0,Rr=[{background:"002451",token:""},{foreground:"7285b7",token:"comment"},{foreground:"ffffff",token:"keyword.operator.class"},{foreground:"ffffff",token:"keyword.operator"},{foreground:"ffffff",token:"constant.other"},{foreground:"ffffff",token:"source.php.embedded.line"},{foreground:"ff9da4",token:"variable"},{foreground:"ff9da4",token:"support.other.variable"},{foreground:"ff9da4",token:"string.other.link"},{foreground:"ff9da4",token:"string.regexp"},{foreground:"ff9da4",token:"entity.name.tag"},{foreground:"ff9da4",token:"entity.other.attribute-name"},{foreground:"ff9da4",token:"meta.tag"},{foreground:"ff9da4",token:"declaration.tag"},{foreground:"ff9da4",token:"markup.deleted.git_gutter"},{foreground:"ffc58f",token:"constant.numeric"},{foreground:"ffc58f",token:"constant.language"},{foreground:"ffc58f",token:"support.constant"},{foreground:"ffc58f",token:"constant.character"},{foreground:"ffc58f",token:"variable.parameter"},{foreground:"ffc58f",token:"punctuation.section.embedded"},{foreground:"ffc58f",token:"keyword.other.unit"},{foreground:"ffeead",token:"entity.name.class"},{foreground:"ffeead",token:"entity.name.type.class"},{foreground:"ffeead",token:"support.type"},{foreground:"ffeead",token:"support.class"},{foreground:"d1f1a9",token:"string"},{foreground:"d1f1a9",token:"constant.other.symbol"},{foreground:"d1f1a9",token:"entity.other.inherited-class"},{foreground:"d1f1a9",token:"markup.heading"},{foreground:"d1f1a9",token:"markup.inserted.git_gutter"},{foreground:"99ffff",token:"keyword.operator"},{foreground:"99ffff",token:"constant.other.color"},{foreground:"bbdaff",token:"entity.name.function"},{foreground:"bbdaff",token:"meta.function-call"},{foreground:"bbdaff",token:"support.function"},{foreground:"bbdaff",token:"keyword.other.special-method"},{foreground:"bbdaff",token:"meta.block-level"},{foreground:"bbdaff",token:"markup.changed.git_gutter"},{foreground:"ebbbff",token:"keyword"},{foreground:"ebbbff",token:"storage"},{foreground:"ebbbff",token:"storage.type"},{foreground:"ebbbff",token:"entity.name.tag.css"},{foreground:"ffffff",background:"f99da5",token:"invalid"},{foreground:"ffffff",background:"bbdafe",token:"meta.separator"},{foreground:"ffffff",background:"ebbbff",token:"invalid.deprecated"},{foreground:"ffffff",token:"markup.inserted.diff"},{foreground:"ffffff",token:"markup.deleted.diff"},{foreground:"ffffff",token:"meta.diff.header.to-file"},{foreground:"ffffff",token:"meta.diff.header.from-file"},{foreground:"718c00",token:"markup.inserted.diff"},{foreground:"718c00",token:"meta.diff.header.to-file"},{foreground:"c82829",token:"markup.deleted.diff"},{foreground:"c82829",token:"meta.diff.header.from-file"},{foreground:"ffffff",background:"4271ae",token:"meta.diff.header.from-file"},{foreground:"ffffff",background:"4271ae",token:"meta.diff.header.to-file"},{foreground:"3e999f",fontStyle:"italic",token:"meta.diff.range"}],Er={"editor.foreground":"#FFFFFF","editor.background":"#002451","editor.selectionBackground":"#003F8E","editor.lineHighlightBackground":"#00346E","editorCursor.foreground":"#FFFFFF","editorWhitespace.foreground":"#404F7D"},wr={base:yr,inherit:_r,rules:Rr,colors:Er};var z={exports:{}},A={};/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var Ce;function Sr(){if(Ce)return A;Ce=1;var i=ne.default,f=Symbol.for("react.element"),v=Symbol.for("react.fragment"),p=Object.prototype.hasOwnProperty,R=i.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,x={key:!0,ref:!0,__self:!0,__source:!0};function E(g,l,w){var h,S={},C=null,$=null;w!==void 0&&(C=""+w),l.key!==void 0&&(C=""+l.key),l.ref!==void 0&&($=l.ref);for(h in l)p.call(l,h)&&!x.hasOwnProperty(h)&&(S[h]=l[h]);if(g&&g.defaultProps)for(h in l=g.defaultProps,l)S[h]===void 0&&(S[h]=l[h]);return{$$typeof:f,type:g,key:C,ref:$,props:S,_owner:R.current}}return A.Fragment=v,A.jsx=E,A.jsxs=E,A}var I={};/**
+ * @license React
+ * react-jsx-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var Oe;function Tr(){return Oe||(Oe=1,process.env.NODE_ENV!=="production"&&function(){var i=ne.default,f=Symbol.for("react.element"),v=Symbol.for("react.portal"),p=Symbol.for("react.fragment"),R=Symbol.for("react.strict_mode"),x=Symbol.for("react.profiler"),E=Symbol.for("react.provider"),g=Symbol.for("react.context"),l=Symbol.for("react.forward_ref"),w=Symbol.for("react.suspense"),h=Symbol.for("react.suspense_list"),S=Symbol.for("react.memo"),C=Symbol.for("react.lazy"),$=Symbol.for("react.offscreen"),oe=Symbol.iterator,Ae="@@iterator";function Ie(e){if(e===null||typeof e!="object")return null;var r=oe&&e[oe]||e[Ae];return typeof r=="function"?r:null}var P=i.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;function m(e){{for(var r=arguments.length,t=new Array(r>1?r-1:0),n=1;n<r;n++)t[n-1]=arguments[n];Ue("error",e,t)}}function Ue(e,r,t){{var n=P.ReactDebugCurrentFrame,u=n.getStackAddendum();u!==""&&(r+="%s",t=t.concat([u]));var s=t.map(function(a){return String(a)});s.unshift("Warning: "+r),Function.prototype.apply.call(console[e],console,s)}}var $e=!1,Ve=!1,Me=!1,Ne=!1,Ye=!1,ae;ae=Symbol.for("react.module.reference");function qe(e){return!!(typeof e=="string"||typeof e=="function"||e===p||e===x||Ye||e===R||e===w||e===h||Ne||e===$||$e||Ve||Me||typeof e=="object"&&e!==null&&(e.$$typeof===C||e.$$typeof===S||e.$$typeof===E||e.$$typeof===g||e.$$typeof===l||e.$$typeof===ae||e.getModuleId!==void 0))}function Be(e,r,t){var n=e.displayName;if(n)return n;var u=r.displayName||r.name||"";return u!==""?t+"("+u+")":t}function fe(e){return e.displayName||"Context"}function T(e){if(e==null)return null;if(typeof e.tag=="number"&&m("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."),typeof e=="function")return e.displayName||e.name||null;if(typeof e=="string")return e;switch(e){case p:return"Fragment";case v:return"Portal";case x:return"Profiler";case R:return"StrictMode";case w:return"Suspense";case h:return"SuspenseList"}if(typeof e=="object")switch(e.$$typeof){case g:var r=e;return fe(r)+".Consumer";case E:var t=e;return fe(t._context)+".Provider";case l:return Be(e,e.render,"ForwardRef");case S:var n=e.displayName||null;return n!==null?n:T(e.type)||"Memo";case C:{var u=e,s=u._payload,a=u._init;try{return T(a(s))}catch{return null}}}return null}var O=Object.assign,W=0,ie,ue,se,ce,le,de,pe;function ve(){}ve.__reactDisabledLog=!0;function ze(){{if(W===0){ie=console.log,ue=console.info,se=console.warn,ce=console.error,le=console.group,de=console.groupCollapsed,pe=console.groupEnd;var e={configurable:!0,enumerable:!0,value:ve,writable:!0};Object.defineProperties(console,{info:e,log:e,warn:e,error:e,group:e,groupCollapsed:e,groupEnd:e})}W++}}function Je(){{if(W--,W===0){var e={configurable:!0,enumerable:!0,writable:!0};Object.defineProperties(console,{log:O({},e,{value:ie}),info:O({},e,{value:ue}),warn:O({},e,{value:se}),error:O({},e,{value:ce}),group:O({},e,{value:le}),groupCollapsed:O({},e,{value:de}),groupEnd:O({},e,{value:pe})})}W<0&&m("disabledDepth fell below zero. This is a bug in React. Please file an issue.")}}var J=P.ReactCurrentDispatcher,G;function V(e,r,t){{if(G===void 0)try{throw Error()}catch(u){var n=u.stack.trim().match(/\n( *(at )?)/);G=n&&n[1]||""}return`
+`+G+e}}var H=!1,M;{var Ge=typeof WeakMap=="function"?WeakMap:Map;M=new Ge}function ge(e,r){if(!e||H)return"";{var t=M.get(e);if(t!==void 0)return t}var n;H=!0;var u=Error.prepareStackTrace;Error.prepareStackTrace=void 0;var s;s=J.current,J.current=null,ze();try{if(r){var a=function(){throw Error()};if(Object.defineProperty(a.prototype,"props",{set:function(){throw Error()}}),typeof Reflect=="object"&&Reflect.construct){try{Reflect.construct(a,[])}catch(j){n=j}Reflect.construct(e,[],a)}else{try{a.call()}catch(j){n=j}e.call(a.prototype)}}else{try{throw Error()}catch(j){n=j}e()}}catch(j){if(j&&n&&typeof j.stack=="string"){for(var o=j.stack.split(`
+`),b=n.stack.split(`
+`),c=o.length-1,d=b.length-1;c>=1&&d>=0&&o[c]!==b[d];)d--;for(;c>=1&&d>=0;c--,d--)if(o[c]!==b[d]){if(c!==1||d!==1)do if(c--,d--,d<0||o[c]!==b[d]){var y=`
+`+o[c].replace(" at new "," at ");return e.displayName&&y.includes("<anonymous>")&&(y=y.replace("<anonymous>",e.displayName)),typeof e=="function"&&M.set(e,y),y}while(c>=1&&d>=0);break}}}finally{H=!1,J.current=s,Je(),Error.prepareStackTrace=u}var D=e?e.displayName||e.name:"",xe=D?V(D):"";return typeof e=="function"&&M.set(e,xe),xe}function He(e,r,t){return ge(e,!1)}function Ke(e){var r=e.prototype;return!!(r&&r.isReactComponent)}function N(e,r,t){if(e==null)return"";if(typeof e=="function")return ge(e,Ke(e));if(typeof e=="string")return V(e);switch(e){case w:return V("Suspense");case h:return V("SuspenseList")}if(typeof e=="object")switch(e.$$typeof){case l:return He(e.render);case S:return N(e.type,r,t);case C:{var n=e,u=n._payload,s=n._init;try{return N(s(u),r,t)}catch{}}}return""}var Y=Object.prototype.hasOwnProperty,me={},be=P.ReactDebugCurrentFrame;function q(e){if(e){var r=e._owner,t=N(e.type,e._source,r?r.type:null);be.setExtraStackFrame(t)}else be.setExtraStackFrame(null)}function Xe(e,r,t,n,u){{var s=Function.call.bind(Y);for(var a in e)if(s(e,a)){var o=void 0;try{if(typeof e[a]!="function"){var b=Error((n||"React class")+": "+t+" type `"+a+"` is invalid; it must be a function, usually from the `prop-types` package, but received `"+typeof e[a]+"`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");throw b.name="Invariant Violation",b}o=e[a](r,a,n,t,null,"SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED")}catch(c){o=c}o&&!(o instanceof Error)&&(q(u),m("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).",n||"React class",t,a,typeof o),q(null)),o instanceof Error&&!(o.message in me)&&(me[o.message]=!0,q(u),m("Failed %s type: %s",t,o.message),q(null))}}}var Ze=Array.isArray;function K(e){return Ze(e)}function Qe(e){{var r=typeof Symbol=="function"&&Symbol.toStringTag,t=r&&e[Symbol.toStringTag]||e.constructor.name||"Object";return t}}function er(e){try{return he(e),!1}catch{return!0}}function he(e){return""+e}function ke(e){if(er(e))return m("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.",Qe(e)),he(e)}var L=P.ReactCurrentOwner,rr={key:!0,ref:!0,__self:!0,__source:!0},ye,_e,X;X={};function tr(e){if(Y.call(e,"ref")){var r=Object.getOwnPropertyDescriptor(e,"ref").get;if(r&&r.isReactWarning)return!1}return e.ref!==void 0}function nr(e){if(Y.call(e,"key")){var r=Object.getOwnPropertyDescriptor(e,"key").get;if(r&&r.isReactWarning)return!1}return e.key!==void 0}function or(e,r){if(typeof e.ref=="string"&&L.current&&r&&L.current.stateNode!==r){var t=T(L.current.type);X[t]||(m('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref',T(L.current.type),e.ref),X[t]=!0)}}function ar(e,r){{var t=function(){ye||(ye=!0,m("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)",r))};t.isReactWarning=!0,Object.defineProperty(e,"key",{get:t,configurable:!0})}}function fr(e,r){{var t=function(){_e||(_e=!0,m("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)",r))};t.isReactWarning=!0,Object.defineProperty(e,"ref",{get:t,configurable:!0})}}var ir=function(e,r,t,n,u,s,a){var o={$$typeof:f,type:e,key:r,ref:t,props:a,_owner:s};return o._store={},Object.defineProperty(o._store,"validated",{configurable:!1,enumerable:!1,writable:!0,value:!1}),Object.defineProperty(o,"_self",{configurable:!1,enumerable:!1,writable:!1,value:n}),Object.defineProperty(o,"_source",{configurable:!1,enumerable:!1,writable:!1,value:u}),Object.freeze&&(Object.freeze(o.props),Object.freeze(o)),o};function ur(e,r,t,n,u){{var s,a={},o=null,b=null;t!==void 0&&(ke(t),o=""+t),nr(r)&&(ke(r.key),o=""+r.key),tr(r)&&(b=r.ref,or(r,u));for(s in r)Y.call(r,s)&&!rr.hasOwnProperty(s)&&(a[s]=r[s]);if(e&&e.defaultProps){var c=e.defaultProps;for(s in c)a[s]===void 0&&(a[s]=c[s])}if(o||b){var d=typeof e=="function"?e.displayName||e.name||"Unknown":e;o&&ar(a,d),b&&fr(a,d)}return ir(e,o,b,u,n,L.current,a)}}var Z=P.ReactCurrentOwner,Re=P.ReactDebugCurrentFrame;function F(e){if(e){var r=e._owner,t=N(e.type,e._source,r?r.type:null);Re.setExtraStackFrame(t)}else Re.setExtraStackFrame(null)}var Q;Q=!1;function ee(e){return typeof e=="object"&&e!==null&&e.$$typeof===f}function Ee(){{if(Z.current){var e=T(Z.current.type);if(e)return`
 
-// src/index.ts
-var src_exports = {};
-__export(src_exports, {
-  Context: () => Context,
-  ContextProvider: () => ContextProvider,
-  MonacoEditor: () => MonacoEditor,
-  Preview: () => Preview,
-  ReactComponentLive: () => ReactComponentLive
-});
-module.exports = __toCommonJS(src_exports);
+Check the render method of \``+e+"`."}return""}}function sr(e){{if(e!==void 0){var r=e.fileName.replace(/^.*[\\\/]/,""),t=e.lineNumber;return`
 
-// src/context-provider.tsx
-var import_react = __toESM(require("react"));
-var import_Tomorrow_Night_Blue = __toESM(require("monaco-themes/themes/Tomorrow-Night-Blue.json"));
-var defaultContextValue = {
-  scope: {},
-  theme: import_Tomorrow_Night_Blue.default
-};
-var Context = import_react.default.createContext(defaultContextValue);
-var ContextProvider = (props) => {
-  const { theme, scope } = props;
-  const contextValue = (0, import_react.useMemo)(() => {
-    return {
-      scope: scope || defaultContextValue.scope,
-      theme: theme || defaultContextValue.theme
-    };
-  }, [scope, theme]);
-  return /* @__PURE__ */ import_react.default.createElement(Context.Provider, {
-    value: contextValue
-  }, props.children);
-};
+Check your code at `+r+":"+t+"."}return""}}var we={};function cr(e){{var r=Ee();if(!r){var t=typeof e=="string"?e:e.displayName||e.name;t&&(r=`
 
-// src/monaco-editor.tsx
-var import_react2 = __toESM(require("react"));
-var monaco2 = __toESM(require("monaco-editor"));
-
-// src/userWorker.ts
-var monaco = __toESM(require("monaco-editor"));
-var import_editor = __toESM(require("monaco-editor/esm/vs/editor/editor.worker?worker"));
-var import_json = __toESM(require("monaco-editor/esm/vs/language/json/json.worker?worker"));
-var import_css = __toESM(require("monaco-editor/esm/vs/language/css/css.worker?worker"));
-var import_html = __toESM(require("monaco-editor/esm/vs/language/html/html.worker?worker"));
-var import_ts = __toESM(require("monaco-editor/esm/vs/language/typescript/ts.worker?worker"));
-self.MonacoEnvironment = {
-  getWorker(_, label) {
-    if (label === "json") {
-      return new import_json.default();
-    }
-    if (label === "css" || label === "scss" || label === "less") {
-      return new import_css.default();
-    }
-    if (label === "html" || label === "handlebars" || label === "razor") {
-      return new import_html.default();
-    }
-    if (label === "typescript" || label === "javascript") {
-      return new import_ts.default();
-    }
-    return new import_editor.default();
-  }
-};
-monaco.languages.typescript.typescriptDefaults.setEagerModelSync(true);
-
-// src/monaco-editor.tsx
-var defaultEditorOptions = {
-  tabSize: 2,
-  lineNumbers: "off",
-  minimap: {
-    enabled: false,
-    size: "proportional",
-    showSlider: "mouseover"
-  },
-  showUnused: true,
-  useShadowDOM: true,
-  language: "javascript"
-};
-var MonacoEditor = (0, import_react2.forwardRef)((props, ref) => {
-  const contextValue = (0, import_react2.useContext)(Context);
-  const {
-    defaultValue = "",
-    editorOptions,
-    theme = contextValue.theme,
-    ...restProps
-  } = props;
-  const editor2 = (0, import_react2.useRef)(null);
-  const monacoEl = (0, import_react2.useRef)(null);
-  (0, import_react2.useImperativeHandle)(ref, () => ({
-    get editor() {
-      return editor2.current;
-    }
-  }));
-  (0, import_react2.useEffect)(() => {
-    if (monacoEl && !editor2.current) {
-      monaco2.editor.defineTheme("tomorrowNightBlue", theme);
-      monaco2.editor.setTheme("tomorrowNightBlue");
-      editor2.current = monaco2.editor.create(monacoEl.current, {
-        ...defaultEditorOptions,
-        ...editorOptions,
-        value: defaultValue
-      });
-    }
-    return () => {
-      var _a;
-      return (_a = editor2.current) == null ? void 0 : _a.dispose();
-    };
-  }, [monacoEl]);
-  return /* @__PURE__ */ import_react2.default.createElement("div", {
-    style: { width: 600, height: 600 },
-    ...restProps,
-    ref: monacoEl
-  });
-});
-
-// src/preview.tsx
-var import_react3 = __toESM(require("react"));
-var import_react_live = require("react-live");
-var Preview = (props) => {
-  const contextValue = (0, import_react3.useContext)(Context);
-  const {
-    code,
-    scope = contextValue.scope,
-    ...restProps
-  } = props;
-  return /* @__PURE__ */ import_react3.default.createElement(import_react3.default.Fragment, null, /* @__PURE__ */ import_react3.default.createElement("div", {
-    ...restProps
-  }, /* @__PURE__ */ import_react3.default.createElement(import_react_live.LiveProvider, {
-    scope,
-    language: "javascript",
-    code
-  }, /* @__PURE__ */ import_react3.default.createElement(import_react_live.LiveError, null), /* @__PURE__ */ import_react3.default.createElement(import_react_live.LivePreview, null))));
-};
-
-// src/component-live.tsx
-var import_react4 = __toESM(require("react"));
-var ReactComponentLive = (props) => {
-  const monacoEditor = (0, import_react4.useRef)(null);
-  const contextValue = (0, import_react4.useContext)(Context);
-  const scope = contextValue.scope;
-  const { defaultValue } = props;
-  const [code, setCode] = (0, import_react4.useState)("");
-  (0, import_react4.useEffect)(() => {
-    if (monacoEditor.current) {
-      const editor2 = monacoEditor.current.editor;
-      editor2.onDidBlurEditorText(() => {
-        setCode(editor2.getValue());
-      });
-      setCode(monacoEditor.current.editor.getValue());
-    }
-  }, [monacoEditor]);
-  return /* @__PURE__ */ import_react4.default.createElement(import_react4.default.Fragment, null, /* @__PURE__ */ import_react4.default.createElement(ContextProvider, {
-    scope
-  }, /* @__PURE__ */ import_react4.default.createElement("div", {
-    style: {
-      display: "flex"
-    }
-  }, /* @__PURE__ */ import_react4.default.createElement(MonacoEditor, {
-    defaultValue,
-    ref: monacoEditor
-  }), /* @__PURE__ */ import_react4.default.createElement("div", {
-    style: {
-      width: 600,
-      height: 600,
-      overflow: "auto",
-      padding: 10,
-      boxSizing: "border-box",
-      background: "lightskyblue"
-    }
-  }, /* @__PURE__ */ import_react4.default.createElement(Preview, {
-    code
-  })))));
-};
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  Context,
-  ContextProvider,
-  MonacoEditor,
-  Preview,
-  ReactComponentLive
-});
-//# sourceMappingURL=index.js.map
+Check the top-level render call using <`+t+">.")}return r}}function Se(e,r){{if(!e._store||e._store.validated||e.key!=null)return;e._store.validated=!0;var t=cr(r);if(we[t])return;we[t]=!0;var n="";e&&e._owner&&e._owner!==Z.current&&(n=" It was passed a child from "+T(e._owner.type)+"."),F(e),m('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.',t,n),F(null)}}function Te(e,r){{if(typeof e!="object")return;if(K(e))for(var t=0;t<e.length;t++){var n=e[t];ee(n)&&Se(n,r)}else if(ee(e))e._store&&(e._store.validated=!0);else if(e){var u=Ie(e);if(typeof u=="function"&&u!==e.entries)for(var s=u.call(e),a;!(a=s.next()).done;)ee(a.value)&&Se(a.value,r)}}}function lr(e){{var r=e.type;if(r==null||typeof r=="string")return;var t;if(typeof r=="function")t=r.propTypes;else if(typeof r=="object"&&(r.$$typeof===l||r.$$typeof===S))t=r.propTypes;else return;if(t){var n=T(r);Xe(t,e.props,"prop",n,e)}else if(r.PropTypes!==void 0&&!Q){Q=!0;var u=T(r);m("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?",u||"Unknown")}typeof r.getDefaultProps=="function"&&!r.getDefaultProps.isReactClassApproved&&m("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.")}}function dr(e){{for(var r=Object.keys(e.props),t=0;t<r.length;t++){var n=r[t];if(n!=="children"&&n!=="key"){F(e),m("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.",n),F(null);break}}e.ref!==null&&(F(e),m("Invalid attribute `ref` supplied to `React.Fragment`."),F(null))}}function je(e,r,t,n,u,s){{var a=qe(e);if(!a){var o="";(e===void 0||typeof e=="object"&&e!==null&&Object.keys(e).length===0)&&(o+=" You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");var b=sr(u);b?o+=b:o+=Ee();var c;e===null?c="null":K(e)?c="array":e!==void 0&&e.$$typeof===f?(c="<"+(T(e.type)||"Unknown")+" />",o=" Did you accidentally export a JSX literal instead of a component?"):c=typeof e,m("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s",c,o)}var d=ur(e,r,t,u,s);if(d==null)return d;if(a){var y=r.children;if(y!==void 0)if(n)if(K(y)){for(var D=0;D<y.length;D++)Te(y[D],e);Object.freeze&&Object.freeze(y)}else m("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");else Te(y,e)}return e===p?dr(d):lr(d),d}}function pr(e,r,t){return je(e,r,t,!0)}function vr(e,r,t){return je(e,r,t,!1)}var gr=vr,mr=pr;I.Fragment=p,I.jsx=gr,I.jsxs=mr}()),I}(function(i){process.env.NODE_ENV==="production"?i.exports=Sr():i.exports=Tr()})(z);const Pe=z.exports.Fragment,_=z.exports.jsx,Fe=z.exports.jsxs,te={scope:{},theme:wr},U=ne.default.createContext(te),De=i=>{const{theme:f,scope:v}=i,p=k.useMemo(()=>({scope:v||te.scope,theme:f||te.theme}),[v,f]);return _(U.Provider,{value:p,children:i.children})};function jr(){return new Worker(""+(typeof document>"u"?new(require("url")).URL("file:"+__dirname+"/assets/editor.worker.55353356.js").href:new URL("assets/editor.worker.55353356.js",document.currentScript&&document.currentScript.src||document.baseURI).href))}function xr(){return new Worker(""+(typeof document>"u"?new(require("url")).URL("file:"+__dirname+"/assets/json.worker.2be2570f.js").href:new URL("assets/json.worker.2be2570f.js",document.currentScript&&document.currentScript.src||document.baseURI).href))}function Cr(){return new Worker(""+(typeof document>"u"?new(require("url")).URL("file:"+__dirname+"/assets/css.worker.1bba75ea.js").href:new URL("assets/css.worker.1bba75ea.js",document.currentScript&&document.currentScript.src||document.baseURI).href))}function Or(){return new Worker(""+(typeof document>"u"?new(require("url")).URL("file:"+__dirname+"/assets/html.worker.3376e5b8.js").href:new URL("assets/html.worker.3376e5b8.js",document.currentScript&&document.currentScript.src||document.baseURI).href))}function Pr(){return new Worker(""+(typeof document>"u"?new(require("url")).URL("file:"+__dirname+"/assets/ts.worker.9acd5107.js").href:new URL("assets/ts.worker.9acd5107.js",document.currentScript&&document.currentScript.src||document.baseURI).href))}self.MonacoEnvironment={getWorker(i,f){return f==="json"?new xr:f==="css"||f==="scss"||f==="less"?new Cr:f==="html"||f==="handlebars"||f==="razor"?new Or:f==="typescript"||f==="javascript"?new Pr:new jr}};B.languages.typescript.typescriptDefaults.setEagerModelSync(!0);const Fr={tabSize:2,lineNumbers:"off",minimap:{enabled:!1,size:"proportional",showSlider:"mouseover"},showUnused:!0,useShadowDOM:!0,language:"javascript"},We=k.forwardRef((i,f)=>{const v=k.useContext(U),{defaultValue:p="",editorOptions:R,theme:x=v.theme,...E}=i,g=k.useRef(null),l=k.useRef(null);return k.useImperativeHandle(f,()=>({get editor(){return g.current}})),k.useEffect(()=>(l&&!g.current&&(B.editor.defineTheme("tomorrowNightBlue",x),B.editor.setTheme("tomorrowNightBlue"),g.current=B.editor.create(l.current,{...Fr,...R,value:p})),()=>{var w;return(w=g.current)==null?void 0:w.dispose()}),[l]),_("div",{style:{width:600,height:600},...E,ref:l})}),Le=i=>{const f=k.useContext(U),{code:v,scope:p=f.scope,...R}=i;return _(Pe,{children:_("div",{...R,children:Fe(re.LiveProvider,{scope:p,language:"javascript",code:v,children:[_(re.LiveError,{}),_(re.LivePreview,{})]})})})},Dr=i=>{const f=k.useRef(null),p=k.useContext(U).scope,{defaultValue:R}=i,[x,E]=k.useState("");return k.useEffect(()=>{if(f.current){const g=f.current.editor;g.onDidBlurEditorText(()=>{E(g.getValue())}),E(f.current.editor.getValue())}},[f]),_(Pe,{children:_(De,{scope:p,children:Fe("div",{style:{display:"flex"},children:[_(We,{defaultValue:R,ref:f}),_("div",{style:{width:600,height:600,overflow:"auto",padding:10,boxSizing:"border-box",background:"lightskyblue"},children:_(Le,{code:x})})]})})})};exports.Context=U;exports.ContextProvider=De;exports.MonacoEditor=We;exports.Preview=Le;exports.ReactComponentLive=Dr;
