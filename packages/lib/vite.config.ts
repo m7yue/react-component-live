@@ -27,7 +27,6 @@ export default defineConfig(({command, mode}) => {
           "monaco-editor",
           "prism-react-renderer",
           "monaco-themes",
-          "react-live"
         ],
       },
     }

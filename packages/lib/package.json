@@ -1,7 +1,7 @@
 {
   "name": "react-component-live",
   "private": false,
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "a component library for live editor and preview with react-jsx syntax.",
   "keywords": [
     "react",
@@ -49,8 +49,9 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
-    "typescript": "^4.6.4",
+    "npm-run-all": "^4.1.5",
     "rollup": "^2.25.0",
+    "typescript": "^4.6.4",
     "vite": "^3.0.0"
   }
 }
