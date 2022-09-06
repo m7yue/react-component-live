@@ -1,7 +1,7 @@
 # react-component-live
 a component library for live editor and preview with react-jsx syntax.
 
-<img src="./packages/lib/assets/use.gif" width=750/>
+<img src="https://raw.githubusercontent.com/m7yue/react-component-live/main/packages/lib/assets/use.gif" width=750/>
 
 ## Usage
 [参考使用案例](https://github.com/m7yue/react-component-live/blob/main/packages/demo/src/App.tsx)
